@@ -1,0 +1,162 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_ LayoutUser.cshtml";
+}
+
+<h2 class="text-center">SÁCH MỚI</h2>
+<hr>
+<div class="row text-center">
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+            <img src="~/Images/nhasachmienphi-chua-troi-co-phai-la-nha-toan-hoc.jpg" alt="Thumbnail Image 1"
+                 class="img-responsive img-rounded imgbook size">
+            <div class="caption">
+                <h3>Sản phẩm</h3>
+                <p>Mô tả tóm tắt sản phẩm</p>
+                <p>
+                    <a href="#" class="btn btn-warning" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+            <img src="~/Images/nhasachmienphi-chuyen-doi-lon.jpg" alt="Thumbnail Image 1"
+                 class="img-responsive img-rounded imgbook size">
+            <div class="caption">
+                <h3>Sản phẩm </h3>
+                <p>Mô tả tóm tắt sản phẩm</p>
+                <p>
+                    <a href="#" class="btn btn-danger" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-xs">
+        <div class="thumbnail">
+            <img src="~/Images/nhasachmienphi-horrible-geography-bo-bien-bui-bo.jpg" alt="Thumbnail Image 1"
+                 class="img-responsive img-rounded imgbook size">
+            <div class="caption">
+                <h3>Sản phẩm </h3>
+                <p>Mô tả tóm tắt sản phẩm</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+           <img src="~/Images/nhasachmienphi-horrible-geography-dai-duong-kho-thuong.jpg" alt="Thumbnail Image 1"
+                 class="img-responsive img-rounded imgbook size">
+            <div class="caption">
+                <h3>Sản phẩm </h3>
+                <p>Mô tả tóm tắt sản phẩm</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+        <div class="thumbnail">
+            <img src="~/Images/nhasachmienphi-horrible-histories-nguoi-ai-cap-xac-uop-cung-phai-choang-vang.jpg" alt="Thumbnail Image 1"
+                 class="img-responsive img-rounded imgbook size">
+            <div class="caption">
+                <h3>Sản phẩm </h3>
+                <p>Mô tả tóm tắt sản phẩm</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-xs">
+        <div class="thumbnail">
+            <img src="~/Images/nhasachmienphi-horrible-science-hoa-hoc-mot-vu-no-am-vang.jpg" alt="Thumbnail Image 1"
+                 class="img-responsive img-rounded imgbook size">
+            <div class="caption">
+                <h3>Sản phẩm </h3>
+                <p>Mô tả tóm tắt sản phẩm</p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Định dạng cho thẻ nav */
+    nav.text-center {
+        text-align: center; /* Căn chữ giữa màn hình */
+        transform: translate(40%, 60%); /* Dịch chuyển phần tử ngược lại 50% chiều rộng và 50% chiều cao để căn giữa */
+        z-index: 1000; /* Đặt z-index cao để đảm bảo nó nằm trên các phần tử khác */
+    }
+
+    /* Định dạng cho danh sách pagination */
+    .pagination {
+        margin: 20px 0; /* Khoảng cách từ trên và dưới */
+        padding: 0;
+    }
+
+        /* Định dạng cho các mục trong danh sách */
+        .pagination li {
+            display: inline; /* Hiển thị theo chiều ngang */
+            margin-right: 10px; /* Khoảng cách giữa các mục */
+        }
+
+        /* Định dạng cho mục hiện tại (active) */
+        .pagination .active {
+            font-weight: bold; /* Đậm chữ cho mục hiện tại */
+        }
+
+        /* Định dạng cho các liên kết */
+        .pagination a {
+            text-decoration: none; /* Loại bỏ gạch chân */
+            color: #333; /* Màu chữ */
+        }
+
+        /* Định dạng cho nút Previous và Next */
+        .pagination li:first-child a,
+        .pagination li:last-child a {
+            font-weight: normal; /* Đặt lại độ đậm chữ cho nút Previous và Next */
+        }
+</style>
+<nav class="text-center">
+    <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+    <ul class="pagination">
+
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+
+        <li class="active"><a href="#">1</a></li>  
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="disabled"><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
