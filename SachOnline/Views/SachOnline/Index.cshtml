@@ -9,14 +9,16 @@
 <style>
     .justify-text {
         text-align: justify;
-        font-size:13px;
-        height:150px;
+        font-size: 13px;
+        height: 150px;
     }
+
     .ten {
         font-size: 20px;
-        font-weight:700;
-        height:50px;
+        font-weight: 700;
+        height: 50px;
     }
+
     .caption {
         width: 180px; /* Đặt chiều rộng cố định tại đây */
         height: 280px;
@@ -25,6 +27,9 @@
         vertical-align: top; /* Để các phần tử cùng nằm trên cùng một dòng */
     }
 
+    .thumbnail {
+        border: 2px solid #ddd;
+    }
 </style>
 <div class="row text-center">
     <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
@@ -79,17 +84,17 @@
 
     <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
         <div class="thumbnail">
-           <img src="~/Images/nhasachmienphi-horrible-geography-dai-duong-kho-thuong.jpg" alt="Thumbnail Image 1"
+            <img src="~/Images/nhasachmienphi-horrible-geography-dai-duong-kho-thuong.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
-           <div class="caption">
-               <h3 class="ten">Đại Dương Khó Thương </h3>
-               <p class="justify-text">Địa lý với những tấm bản đồ rắc rối, những khối đá trơ trơ và những đồ thị vô hồn có làm bạn chán ngấy? Yên tâm đi, trong Đại dương khó thương không hề có những thứ đó, chỉ toàn những chuyện rùng mình </p>
-               <p>
-                   <a href="#" class="btn btn-primary" role="button">
-                       <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Mua ngay
-                   </a>
-               </p>
-           </div>
+            <div class="caption">
+                <h3 class="ten">Đại Dương Khó Thương </h3>
+                <p class="justify-text">Địa lý với những tấm bản đồ rắc rối, những khối đá trơ trơ và những đồ thị vô hồn có làm bạn chán ngấy? Yên tâm đi, trong Đại dương khó thương không hề có những thứ đó, chỉ toàn những chuyện rùng mình </p>
+                <p>
+                    <a href="#" class="btn btn-primary" role="button">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Mua ngay
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
     <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
@@ -125,44 +130,42 @@
 </div>
 
 <style>
-    /* Định dạng cho thẻ nav */
-    nav.text-center {
-        text-align: center; /* Căn chữ giữa màn hình */
-        transform: translate(40%, 60%); /* Dịch chuyển phần tử ngược lại 50% chiều rộng và 50% chiều cao để căn giữa */
-        z-index: 1000; /* Đặt z-index cao để đảm bảo nó nằm trên các phần tử khác */
-    }
-
-    /* Định dạng cho danh sách pagination */
     .pagination {
-        margin: 20px 0; /* Khoảng cách từ trên và dưới */
-        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; /* Điều chỉnh khoảng cách từ trên xuống nếu cần */
+    }
+    /* Định dạng cho các mục trong danh sách pagination */
+    .pagination li {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        margin-right: 1px;
     }
 
-        /* Định dạng cho các mục trong danh sách */
-        .pagination li {
-            display: inline; /* Hiển thị theo chiều ngang */
-            margin-right: 10px; /* Khoảng cách giữa các mục */
+        /* Màu nền xanh cho mục được chọn */
+        .pagination li:hover {
+            background-color: skyblue;
+            color: white;
+            border-color: #ffd800;
         }
 
-        /* Định dạng cho mục hiện tại (active) */
-        .pagination .active {
-            font-weight: bold; /* Đậm chữ cho mục hiện tại */
+        /* Thêm khung bao quanh mỗi ô vuông */
+        .pagination li a {
+            display: block;
+            text-decoration: none;
+            width: 28px;
+            height: 28px;
         }
 
-        /* Định dạng cho các liên kết */
-        .pagination a {
-            text-decoration: none; /* Loại bỏ gạch chân */
-            color: #333; /* Màu chữ */
-        }
-
-        /* Định dạng cho nút Previous và Next */
-        .pagination li:first-child a,
-        .pagination li:last-child a {
-            font-weight: normal; /* Đặt lại độ đậm chữ cho nút Previous và Next */
-        }
 </style>
 <nav class="text-center">
-    <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
     <ul class="pagination">
 
         <li>
@@ -171,11 +174,12 @@
             </a>
         </li>
 
-        <li class="active"><a href="#">1</a></li>  
+        <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
-        <li class="disabled"><a href="#">5</a></li>
+        <li><a href="#">5</a></li>
+
         <li>
             <a href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
@@ -183,4 +187,6 @@
         </li>
     </ul>
 </nav>
+
+
 
