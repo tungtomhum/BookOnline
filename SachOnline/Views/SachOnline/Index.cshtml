@@ -7,32 +7,34 @@
 <h2 class="text-center">SÁCH MỚI</h2>
 <hr>
 <style>
+    .ten {
+        font-size: 20px;
+        font-weight: 700;
+        height: 50px;
+    }
     .justify-text {
         text-align: justify;
         font-size: 13px;
         height: 150px;
     }
 
-    .ten {
-        font-size: 20px;
-        font-weight: 700;
-        height: 50px;
-    }
-
     .caption {
-        width: 180px; /* Đặt chiều rộng cố định tại đây */
+        width: 180px;
         height: 280px;
-        margin: 10px; /* Để tạo khoảng cách giữa các phần tử */
-        display: inline-block; /* Để các phần tử nằm cạnh nhau */
-        vertical-align: top; /* Để các phần tử cùng nằm trên cùng một dòng */
+        margin: 10px;
+        display: inline-block; 
+        vertical-align: top; 
     }
 
     .thumbnail {
         border: 2px solid #ddd;
     }
+    .sp {
+        padding-top:20px;
+    }
 </style>
 <div class="row text-center">
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+       <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
         <div class="thumbnail">
             <img src="~/Images/nhasachmienphi-chua-troi-co-phai-la-nha-toan-hoc.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
@@ -47,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+       <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
         <div class="thumbnail">
             <img src="~/Images/nhasachmienphi-chuyen-doi-lon.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
@@ -62,7 +64,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-xs">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
         <div class="thumbnail">
             <img src="~/Images/nhasachmienphi-horrible-geography-bo-bien-bui-bo.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
@@ -82,7 +84,7 @@
         </div>
     </div>
 
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+       <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
         <div class="thumbnail">
             <img src="~/Images/nhasachmienphi-horrible-geography-dai-duong-kho-thuong.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
@@ -97,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+       <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
         <div class="thumbnail">
             <img src="~/Images/nhasachmienphi-horrible-histories-nguoi-ai-cap-xac-uop-cung-phai-choang-vang.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
@@ -112,7 +114,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-xs">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
         <div class="thumbnail">
             <img src="~/Images/nhasachmienphi-horrible-science-hoa-hoc-mot-vu-no-am-vang.jpg" alt="Thumbnail Image 1"
                  class="img-responsive img-rounded imgbook size">
@@ -134,9 +136,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px; /* Điều chỉnh khoảng cách từ trên xuống nếu cần */
+        margin-top: 10px; 
     }
-    /* Định dạng cho các mục trong danh sách pagination */
     .pagination li {
         display: inline-flex;
         justify-content: center;
@@ -149,14 +150,12 @@
         margin-right: 1px;
     }
 
-        /* Màu nền xanh cho mục được chọn */
         .pagination li:hover {
             background-color: skyblue;
             color: white;
             border-color: #ffd800;
         }
 
-        /* Thêm khung bao quanh mỗi ô vuông */
         .pagination li a {
             display: block;
             text-decoration: none;
