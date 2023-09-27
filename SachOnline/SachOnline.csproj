@@ -48,6 +48,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -124,6 +125,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\dbSachOnline.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSachOnline.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -143,30 +149,39 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="css\css.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\nhasachmienphi-chua-troi-co-phai-la-nha-toan-hoc.jpg" />
-    <Content Include="Images\nhasachmienphi-chuyen-doi-lon.jpg" />
-    <Content Include="Images\nhasachmienphi-horrible-geography-bo-bien-bui-bo.jpg" />
-    <Content Include="Images\nhasachmienphi-horrible-geography-dai-duong-kho-thuong.jpg" />
-    <Content Include="Images\nhasachmienphi-horrible-histories-nguoi-ai-cap-xac-uop-cung-phai-choang-vang.jpg" />
-    <Content Include="Images\nhasachmienphi-horrible-science-hoa-hoc-mot-vu-no-am-vang.jpg" />
-    <Content Include="Images\nhasachmienphi-horrible-science-sinh-hoc-co-nhung-cau-chuyen-ky-dieu.jpg" />
-    <Content Include="Images\nhasachmienphi-horrible-science-vi-sinh-vat-vi-tinh.jpg" />
-    <Content Include="Images\nhasachmienphi-kho-tang-truyen-co-tich-viet-nam.jpg" />
-    <Content Include="Images\nhasachmienphi-lieu-it-da-het-thoi.jpg" />
-    <Content Include="Images\nhasachmienphi-loi-noi-doi-vi-dai-cua-nao.jpg" />
-    <Content Include="Images\nhasachmienphi-nao-toi-nay-an-gi-the-luong-nan-cua-loai-an-tap.jpg" />
-    <Content Include="Images\nhasachmienphi-nhin-len-nhung-chom-sao.jpg" />
-    <Content Include="Images\nhasachmienphi-the-gioi-luong-tu-ky-bi.jpg" />
-    <Content Include="Images\nhasachmienphi-thuyet-tuong-doi-hep-va-rong-cua-albert-einstein.gif" />
+    <Content Include="Images\Bo bien bui bo.jpg" />
+    <Content Include="Images\Chua troi co phai nha toan hoc.jpg" />
+    <Content Include="Images\Chuyen doi lon.jpg" />
+    <Content Include="Images\Dai duong kho thuong.jpg" />
+    <Content Include="Images\Kho tang truyen co tinh viet nam.jpg" />
+    <Content Include="Images\123.jpg" />
+    <Content Include="Images\Loi noi doi vi dai cua nao.jpg" />
+    <Content Include="Images\Mot vu no am vang.jpg" />
+    <Content Include="Images\Nao toi nay an gi.jpg" />
+    <Content Include="Images\Nguoi ai cap.jpg" />
+    <Content Include="Images\Nhin len nhung chom sao.jpg" />
+    <Content Include="Images\Sinh hoc co nhung cau chuyen dieu ky.jpg" />
+    <Content Include="Images\The gioi luong tu.jpg" />
+    <Content Include="Images\Thuyet tương doi hep va rong.gif" />
+    <Content Include="Images\Vi sinh vat vi tinh.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Models\dbSachOnline.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbSachOnline.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Models\dbSachOnline.dbml.layout">
+      <DependentUpon>dbSachOnline.dbml</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -192,10 +207,10 @@
     <Content Include="Views\SachOnline\Index.cshtml" />
     <Content Include="Views\Shared\ChuDePartial.cshtml" />
     <Content Include="Views\Shared\NhaXuatBanPartial.cshtml" />
+    <Content Include="Views\SachOnline\SachBanNhieuPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -223,6 +238,9 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

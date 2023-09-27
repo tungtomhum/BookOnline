@@ -1,12 +1,9 @@
 ﻿@model IEnumerable<SachOnline.Models.SACH>
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_ LayoutUser.cshtml";
-}
 
-<h2 class="text-center">SÁCH MỚI</h2>
+<link href="~/css/css.css" rel="stylesheet" />
+
+<h2 class="text-center">SÁCH BÁN NHIỀU NHẤT</h2>
 <hr>
-
 <div class="row text-center">
     @foreach (var sach in Model)
     {
@@ -43,13 +40,10 @@
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
 
-        <li> 
+        <li>
             <a href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
             </a>
         </li>
     </ul>
 </nav>
-
-
-
